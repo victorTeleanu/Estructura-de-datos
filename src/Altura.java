@@ -50,6 +50,7 @@ public class Altura {
         for (Double altura : alturas) {
             System.out.println(altura + " ");
         }
+        System.out.println("");
         System.out.println("La altura media es " + media);
         System.out.println("Hay " + superior + " alumnos con altura superior a la media");
         System.out.println("Hay " + inferior + " alumnos que no superan la altura media");
