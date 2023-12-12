@@ -9,7 +9,7 @@ public class Loteria {
             int cuenta = 1;
             int ultimo = Integer.parseInt("" + valor.charAt(valor.length() - 1));
             if (ultimoNum.containsKey(ultimo)) {
-                cuenta++;
+                cuenta = ultimoNum.get(ultimo)+1;
             }
             ultimoNum.put(ultimo, cuenta);
         }
@@ -20,7 +20,7 @@ public class Loteria {
         boletos.add("58975");
         boletos.add("25894");
         boletos.add("52985");
-        boletos.add("98598");
+        boletos.add("98595");
         System.out.println(terminacion(boletos));
     }
 }
