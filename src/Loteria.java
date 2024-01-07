@@ -16,6 +16,7 @@ public class Loteria {
         return ultimoNum;
     }
     public static void main(String[] args) {
+        //OK
         ArrayList<String> boletos = new ArrayList<>();
         boletos.add("58975");
         boletos.add("25894");

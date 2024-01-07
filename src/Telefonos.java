@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Telefonos {
     public static void main(String[] args) {
+        //OK
         HashMap<String, String> contactos = new HashMap<>();
         contactos.put("Juan", "674 592 783");
         contactos.put("Maria", "648 901 009");

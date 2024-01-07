@@ -17,6 +17,7 @@ public class Frequency {
     }
 
     public static void main(String[] args) {
+        //OK
         ArrayList<String> palabras = new ArrayList<>();
         System.out.println("Introduce palabras (déjalo en blanco para acabar)");
         Scanner miScanner = new Scanner(System.in);
