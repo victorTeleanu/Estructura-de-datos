@@ -3,6 +3,7 @@ import java.util.*;
 
 public class Anagramas {
     public static void main(String[] args) throws IOException {
+        //OK, aunque me huele a ChatGPT
 
         int minGroupSize = 20;
 

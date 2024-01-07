@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Telefonos2 {
     public static void main(String[] args) {
+        //OK
         ArrayList<String> telefonos = new ArrayList<>();
         HashMap<String, ArrayList<String>> agenda = new HashMap<>();
         telefonos.add("671 769 011");
