@@ -9,8 +9,8 @@ public class Botin {
         HashMap<Integer, ArrayList<Integer>> rep = new HashMap<>();
         for (int i = 0; i < participantes; i++) {
             ArrayList<Integer> billetesARepartir = new ArrayList<>();
-            for (int j = 0; j < billetes.length; j++) {
-                billetesARepartir.add(billetes[j % participantes]);
+            for (int j = i; j < billetes.length; j += participantes) {
+                billetesARepartir.add(billetes[j]);
             }
             rep.put(i, billetesARepartir);
         }
