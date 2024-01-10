@@ -2,36 +2,36 @@ import java.util.Stack;
 
 public class ExpresionesAritmeticas {
 
-    public static int calcular(String expresion){
-        String[] datos = expresion.split("");
+    public static int calcular (String expresion){
+        String[] datos = expresion.split(" ");
         Stack<Integer> pila = new Stack<>();
         int n1;
         int n2;
         int resultado;
         for (int i = 0; i < datos.length; i++) {
-            switch (datos[i]) {
-                case "+":
-                    n2 = pila.pop();
-                    n1 = pila.pop();
-                    resultado = n1+n2;
+            switch (datos[i]){
+                case"+":
+                    n2=pila.pop();
+                    n1=pila.pop();
+                    resultado=n1+n2;
                     pila.push(resultado);
                     break;
                 case "-":
-                    n2 = pila.pop();
-                    n1 = pila.pop();
-                    resultado = n1-n2;
+                    n2=pila.pop();
+                    n1=pila.pop();
+                    resultado=n1-n2;
                     pila.push(resultado);
                     break;
                 case "*":
-                    n2 = pila.pop();
-                    n1 = pila.pop();
-                    resultado = n1*n2;
+                    n2=pila.pop();
+                    n1=pila.pop();
+                    resultado=n1*n2;
                     pila.push(resultado);
                     break;
                 case "/":
-                    n2 = pila.pop();
-                    n1 = pila.pop();
-                    resultado = n1/n2;
+                    n2=pila.pop();
+                    n1=pila.pop();
+                    resultado=n1/n2;
                     pila.push(resultado);
                     break;
                 default:
@@ -42,7 +42,11 @@ public class ExpresionesAritmeticas {
         return pila.pop();
     }
     public static void main(String[] args) {
+
         System.out.println(calcular("5 1 2 + 4 * + 3 -"));
+        System.out.println(calcular("2 4 5 3 / * +"));
+        System.out.println(calcular("3 5 4 + *"));
+        System.out.println(calcular("8 1 1 - /"));
     }
 }
 
